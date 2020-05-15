@@ -21,8 +21,7 @@
     "./**/*.{js,jsx,ts,tsx,css}": [
       "pretty-quick --staged",
       "npm run lint:fix",
-      "jest  --bail --findRelatedTests",
-      "git add"
+      "jest --bail --findRelatedTests"
     ]
   },
   "dependencies": {
