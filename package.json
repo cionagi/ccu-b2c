@@ -12,8 +12,18 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "lint-staged",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
     }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,ts,tsx,css}": [
+      "pretty-quick --staged",
+      "npm run lint:fix",
+      "jest  --bail --findRelatedTests",
+      "git add"
+    ]
   },
   "dependencies": {
     "next": "9.4.0",
@@ -30,6 +40,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1"
   }
