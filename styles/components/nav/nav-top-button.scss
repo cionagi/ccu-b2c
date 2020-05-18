@@ -1,0 +1,12 @@
+.nav-top-button {
+  &__container {
+    margin: 1rem;
+  }
+  &__text {
+    font-size: 0.7rem;
+    color: $WHITE;
+    padding-left: 2em;
+    text-decoration: none;
+    padding: 0 0.5em;
+  }
+}
