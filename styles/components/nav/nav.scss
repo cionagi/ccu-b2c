@@ -3,3 +3,36 @@
   &__container {
   }
 }
+
+.nav-menu-items {
+  padding: 0 10px;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  justify-content: space-evenly;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+  &__button {
+    font-size: 0.7rem;
+    color: $PRIMARY;
+    font-weight: 900;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 11px;
+    cursor: pointer;
+    &:hover {
+      color: $WHITE;
+      background-color: $PRIMARY;
+    }
+  }
+}
