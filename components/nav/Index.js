@@ -8,11 +8,11 @@ import NavTop from './NavTop'
 
 const Index = () => {
   return (
-    <>
+    <header>
       <NavTop />
       <Nav />
       <NavBottom />
-    </>
+    </header>
   )
 }
 
