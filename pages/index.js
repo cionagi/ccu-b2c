@@ -6,6 +6,7 @@ import Nav from '../components/nav/Index'
 import Footer from '../components/footer/Index'
 import ProductCard from '../components/productCard/Index'
 import Title from '../components/Title'
+import MenuFilter from '../components/MenuFilters/Index'
 
 // TODO remove
 const PRODUCT_FAKE = {
@@ -25,20 +26,31 @@ export default function Home() {
       <main>
         <div className="container">
           <section>
-            <Title title="Lorem ipsum dolor sit amet " />
+            <Title title="Lorem ipsum dolor sit amet" />
           </section>
           <div className="row">
-            <div className="col-4">
-              <ProductCard product={PRODUCT_FAKE} />
+            <div className="col-3">
+              <div className="row">
+                <div className="col">
+                  <MenuFilter />
+                </div>
+              </div>
             </div>
-            <div className="col-4">
-              <ProductCard product={PRODUCT_FAKE} />
-            </div>
-            <div className="col-4">
-              <ProductCard product={PRODUCT_FAKE} />
-            </div>
-            <div className="col-4">
-              <ProductCard product={PRODUCT_FAKE} />
+            <div className="col-9">
+              <div className="row">
+                <div className="col-4">
+                  <ProductCard product={PRODUCT_FAKE} />
+                </div>
+                <div className="col-4">
+                  <ProductCard product={PRODUCT_FAKE} />
+                </div>
+                <div className="col-4">
+                  <ProductCard product={PRODUCT_FAKE} />
+                </div>
+                <div className="col-8">
+                  <ProductCard product={PRODUCT_FAKE} horizontalView />
+                </div>
+              </div>
             </div>
           </div>
         </div>
