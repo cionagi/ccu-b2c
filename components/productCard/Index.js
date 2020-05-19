@@ -11,12 +11,17 @@ const Index = ({ product, horizontalView }) => {
     <div className="product-card">
       <div className={`product-card__container ${horizontalView && 'horizontal-view'}`}>
         <div className="product-card__offer_box">
-          <div className="product-card__offer_label">{offer}</div>
+          <div className="product-card__offer_label">
+            <span className="num">{offer}</span>
+            <span className="text">DE DCTO</span>
+          </div>
         </div>
         <div className="product-card__box">
           <div className="product-card__image_container">
             <div className="product-card__image">
-              <img src={imgSrc} alt="ee" />
+              <a href="/" className="">
+                <img src={imgSrc} alt={name} />
+              </a>
             </div>
           </div>
           <div className="product-card__info">
