@@ -1,7 +1,12 @@
+// Sass
 @import 'colors';
-@import '~bootstrap-4-grid/scss/grid.scss';
 @import 'components/all';
 
+// Library
+@import '~bootstrap-4-grid/scss/grid.scss';
+@import '~@brainhubeu/react-carousel/lib/style.css';
+
+// Custom
 body {
   min-height: 100vh;
   font-family: 'Lato', sans-serif;

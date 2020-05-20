@@ -1,0 +1,13 @@
+.BrainhubCarousel__arrows {
+  position: relative;
+  padding: 21px;
+  border: none;
+  overflow: hidden;
+  outline: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: $PRIMARY;
+  &:hover:enabled {
+    background-color: $PRIMARY-2;
+  }
+}
