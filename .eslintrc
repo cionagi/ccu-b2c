@@ -31,6 +31,7 @@
     ],
     "react/jsx-filename-extension": [2, { "extensions": [".js"] }],
     "react/require-default-props": 0,
-    "react/jsx-wrap-multilines": ["error", { "arrow": true, "return": true, "declaration": true }]
+    "react/jsx-wrap-multilines": ["error", { "arrow": true, "return": true, "declaration": true }],
+    "react/forbid-prop-types": 1
   }
 }
